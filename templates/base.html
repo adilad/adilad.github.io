@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    {% block head %}{% endblock %}
+</head>
+<body id="{% block body_id %}main-page{% endblock %}">
+    <div class="container">
+        {% block sidebar %}
+            {% include 'sidebar.html' %}
+        {% endblock %}
+        <div class="divider"></div>
+        <main class="content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    {% block scripts %}
+        <script src="{{ url_for('static', filename='js/typing-effect.js') }}"></script>
+    {% endblock %}
+</body>
+</html>

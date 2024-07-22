@@ -1,0 +1,43 @@
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# Environment variables
+*.env
+
+# Flask instance folder
+instance/
+
+# Distribution and build directories
+build/
+dist/
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+.coverage
+*.coverage
+*.cover
+nosetests.xml
+coverage.xml
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other
+*.sqlite3
