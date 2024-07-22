@@ -42,7 +42,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: build
-        publish_branch: hosted
+        publish_branch: develop
         keep_files: false
       env:
         ACTIONS_STEP_DEBUG: true
