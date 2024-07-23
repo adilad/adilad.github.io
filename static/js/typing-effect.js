@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
         'hola',
         'just-saying-hi',
         'remember, you are amazing',
+        'this blog is inspired by Hugo Ivy theme',
+        'wanna chat ?',
         'reach me on linkedin',
         'else',
         'reach me on alad (at) terpmail (dot) umd (dot) edu',
-        'being a bit cautious of the bots here',
-        'or-I-really-like-your-website',
-        'thanks'
+        'trying to dodge the bots',
+        'if you did not catch that',
+        'thanks for stopping buy'
     ];
 
     let idx = 0;
