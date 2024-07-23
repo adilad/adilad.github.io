@@ -7,9 +7,8 @@ freezer = Freezer(app)
 def index():
     yield '/'
 @freezer.register_generator
-def about():
-    yield '/about.html'
-
+def mystory():
+    yield '/mystory.html'
 
 if __name__ == '__main__':
     freezer.freeze()
