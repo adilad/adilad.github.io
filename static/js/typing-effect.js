@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'reach me on alad (at) terpmail (dot) umd (dot) edu',
         'trying to dodge the bots',
         'if you did not catch that',
-        'thanks for stopping buy'
+        'thanks for stopping by'
     ];
 
     let idx = 0;
