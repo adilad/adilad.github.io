@@ -10,6 +10,5 @@ def index():
 def mystory():
     return render_template('mystory.html')
 
-
 if __name__ == '__main__':
     app.run(debug=True)
