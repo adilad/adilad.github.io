@@ -25,6 +25,8 @@
             {% block content %}{% endblock %}
         </main>
     </div>
-   
+    {% block scripts %}
+        <script src="{{ url_for('static', filename='js/typing-effect.js') }}"></script>
+    {% endblock %}
 </body>
 </html>

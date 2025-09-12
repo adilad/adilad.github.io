@@ -1,12 +1,14 @@
 <aside class="sidebar">
     <h1>Aditya Lad</h1>
+    <h12 id="typing"></h12>
+    <h12 id="typing1"></h12>
     <nav aria-label="Main navigation">
         <ul>
             <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('mystory') }}">My Story</a></li>
         </ul>
          <footer>
-        <p>&copy; 2025 Aditya Lad</p>
+        <p>&copy; {{ current_year }} Aditya Lad</p>
     </footer>
     </nav>
 </aside>
