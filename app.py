@@ -13,9 +13,5 @@ def inject_current_year():
 def index():
     return render_template('index.html')
 
-@app.route('/mystory.html')
-def mystory():
-    return render_template('mystory.html')
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

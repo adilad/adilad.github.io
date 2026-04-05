@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self'; connect-src https://www.google-analytics.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Your Website{% endblock %}</title>
+    <meta name="description" content="Aditya Lad. Software engineer building Moiety and Eclat at Lad Intelligence.">
+    <title>{% block title %}Aditya Lad{% endblock %}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Inter'>A</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     {% block head %}{% endblock %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TV6N3JCHJ"></script>
     <script>
@@ -15,18 +21,15 @@
       gtag('config', 'G-1TV6N3JCHJ');
     </script>
 </head>
-<body id="{% block body_id %}main-page{% endblock %}">
+<body>
     <div class="container">
-        {% block sidebar %}
-            {% include 'sidebar.html' %}
-        {% endblock %}
+        <aside class="sidebar">
+            <h1>Aditya Lad</h1>
+        </aside>
         <div class="divider"></div>
         <main class="content">
             {% block content %}{% endblock %}
         </main>
     </div>
-    {% block scripts %}
-        <script src="{{ url_for('static', filename='js/typing-effect.js') }}"></script>
-    {% endblock %}
 </body>
 </html>
